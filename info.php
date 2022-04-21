@@ -5,6 +5,21 @@ $db = new user();
 
 $result = $db->get_all();
 ?>
+<?php
+
+if (isset($_COOKIE['admin'])) {
+    $cookie_value = $_COOKIE['admin'];
+    if ($cookie_value = "lssdkfj23o7sldkfjKJFKDSJF3sd") {
+    } else {
+        header("Location: login.php");
+    }
+} else {
+    header("Location: login.php");
+}
+
+
+?>
+
 
 <!DOCTYPE html>
 <html>
