@@ -25,4 +25,24 @@ class user
         $result = $this->conn->get_all($query);
         return $result;
     }
+
+    public function check_dup($mail,$number1,$number2){
+        $query = "SELECT *  FROM `student-info` where `mail_id` = '$mail';";
+        $query_1 = "SELECT *  FROM `student-info` where `contact_number_1` = '$number1' or `contact_number_2` = '$number2';"; 
+        $result = $this->conn->select($query);
+        $result_1 = $this->conn->select($query_1);
+
+        if($result == "No user found"){
+            //echo "helo";
+            if($result_1 == "No user found"){
+                return 1;
+            }else{
+                return 2;
+            }
+        }else{
+            return 2;
+        }
+
+    }
 }
+

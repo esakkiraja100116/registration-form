@@ -22,12 +22,17 @@ if (isset($_POST['name'])) {
     // echo "<pre>";
     // print_r($_POST);
     // echo "</pre>";
+    $check_dup = $db->check_dup($mail,$c_num_1,$c_num_2);
+    if($check_dup != 1 ){
+        header("Location: index.php?result=duplicate");
+    }
+ 
 
     $insert_user = $db->insert_user($name, $class, $mail, $c_num_1, $c_num_2, $father_name, $father_mobile, $mother_name, $mother_mobile, $course, $filed_type);
     if ($insert_user == 1) {
-        header("Location: index.php?success");
+        header("Location: index.php?result=success");
     } else {
-        header("Location: index.php?failed");
+        header("Location: index.php?result=failed");
     }
 }
 
