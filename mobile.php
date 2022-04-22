@@ -297,23 +297,24 @@
             </div>
 
             <br>
+            <div class="card" style="background: #FF8585; border-radius: 25px;">
+                <div class="card-body" style="background: #FF8585; border-radius: 25px;">
+                    <h5 class="card-title">
+                        <center> TIME </center>
+                    </h5>
+                    <hr>
 
-            <div class="card-body" style="background: #FF8585; border-radius: 25px;">
-                <h5 class="card-title">
-                    <center> TIME </center>
-                </h5>
-                <hr>
 
 
+                    <p class="card-text">
+                        <center>
+                            Date : 24 <br>
+                            Day : Sunday <br>
+                            Time : 4.00pm to 7.00pm
+                        </center>
+                    </p>
 
-                <p class="card-text">
-                    <center>
-                        Date : 24 <br>
-                        Day : Sunday <br>
-                        Time : 4.00pm to 7.00pm
-                    </center>
-                </p>
-
+                </div>
             </div>
 
 
