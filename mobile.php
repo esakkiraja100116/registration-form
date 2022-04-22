@@ -294,10 +294,9 @@
                 </div>
 
 
-            </div>
 
-            <br>
-            <div class="card" style="background: #FF8585; border-radius: 25px;">
+                <br>
+
                 <div class="card-body" style="background: #FF8585; border-radius: 25px;">
                     <h5 class="card-title">
                         <center> TIME </center>
@@ -315,10 +314,10 @@
                     </p>
 
                 </div>
+
+
+
             </div>
-
-
-        </div>
         </div>
 
         <p>
